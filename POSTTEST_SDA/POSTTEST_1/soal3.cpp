@@ -30,8 +30,9 @@ int main()
     Mahasiswa dataMahasiswa[4];
     int sizeDataMahasiswa = 4;
 
-    dataMahasiswa[1] = {"Trigusni", "26091D06060", 3.65};
-    dataMahasiswa[0] = {"Hermawan", "2409106060", 3.43};
+    // Data Mahasiswa yang sudah didefinisikan
+    dataMahasiswa[0] = {"Trigusni", "26091D06060", 3.65};
+    dataMahasiswa[1] = {"Hermawan", "2409106060", 3.43};
     dataMahasiswa[2] = {"Much", "2409106999", 3.99};
     dataMahasiswa[3] = {"Budi", "2409106000", 3.33};
     
@@ -43,7 +44,7 @@ int main()
         cout << "\tNIM\t: " << dataMahasiswa[i].nim << endl;
         cout << "\tIPK\t: " << dataMahasiswa[i].ipk << endl;
     }
-    cout << endl;
+    cout << "------------------------------" << endl;
     
     SortAscendingMahasiswa(dataMahasiswa, sizeDataMahasiswa);
     cout << "Data Mahasiswa setelah diurutkan: " << endl;
@@ -54,6 +55,7 @@ int main()
         cout << "\tNIM\t: " << dataMahasiswa[i].nim << endl;
         cout << "\tIPK\t: " << dataMahasiswa[i].ipk << endl;
     }
+    cout << "------------------------------" << endl;
 
     return 0;
 }
